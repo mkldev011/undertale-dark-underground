@@ -1,0 +1,139 @@
+{
+	"enemies": [
+		{
+			"id": "froggit",
+			"name": "Froggit",
+			"hp": 20,
+			"attack": 6,
+			"defense": 2,
+			"exp_given": 3,
+			"gold_given": 3,
+			"can_spare": true,
+			"spare_requirements": ["froggit_talked"],
+			"description": "It watches you intently, waiting to strike.",
+			"attack_patterns": [
+				{
+					"name": "Ribbit",
+					"damage": 3,
+					"bullets": 3,
+					"pattern": "spread"
+				}
+			],
+			"act_responses": {
+				"check": "* Froggit - 20 HP\n* It seems confused by your kindness.",
+				"talk": "* You ribbitted at the Froggit.\n* It... ribbitted back?\n* (Froggit seems slightly more friendly)",
+				"pet": "* You reached out to pet the Froggit.\n* It got scared and hopped away."
+			}
+		},
+		{
+			"id": "whimsun",
+			"name": "Whimsun",
+			"hp": 15,
+			"attack": 5,
+			"defense": 1,
+			"exp_given": 2,
+			"gold_given": 2,
+			"can_spare": true,
+			"spare_requirements": ["whimsun_encouraged"],
+			"description": "It's nervously fluttering around.",
+			"attack_patterns": [
+				{
+					"name": "Blush",
+					"damage": 2,
+					"bullets": 2,
+					"pattern": "aimed"
+				}
+			],
+			"act_responses": {
+				"check": "* Whimsun - 15 HP\n* It's too nervous to look at you.",
+				"encourage": "* You told the Whimsun it's doing great!\n* It's tearing up... with joy!",
+				"pet": "* The Whimsun is too nervous to be pet."
+			}
+		},
+		{
+			"id": "loox",
+			"name": "Loox",
+			"hp": 28,
+			"attack": 7,
+			"defense": 3,
+			"exp_given": 5,
+			"gold_given": 5,
+			"can_spare": true,
+			"spare_requirements": ["loox_glasses_fixed"],
+			"description": "It wears glasses that are cracked.",
+			"attack_patterns": [
+				{
+					"name": "Glare",
+					"damage": 4,
+					"bullets": 4,
+					"pattern": "spread"
+				},
+				{
+					"name": "Looking Away",
+					"damage": 5,
+					"bullets": 2,
+					"pattern": "random"
+				}
+			],
+			"act_responses": {
+				"check": "* Loox - 28 HP\n* Its glasses are cracked, so it can't see well.",
+				"glasses": "* You offered to fix Loox's glasses.\n* With your expert skills, they're good as new!\n* Loox can see clearly now!"
+			}
+		},
+		{
+			"id": "dummy_battle",
+			"name": "Training Dummy",
+			"hp": 40,
+			"attack": 8,
+			"defense": 5,
+			"exp_given": 0,
+			"gold_given": 0,
+			"can_spare": true,
+			"spare_requirements": [],
+			"description": "A simple training dummy for practice.",
+			"attack_patterns": [
+				{
+					"name": "Hit",
+					"damage": 5,
+					"bullets": 3,
+					"pattern": "spread"
+				}
+			],
+			"act_responses": {
+				"check": "* Training Dummy - 40 HP\n* It's completely still.",
+				"talk": "* You tried talking to the dummy.\n* ...\n* It doesn't seem to be a talker."
+			}
+		},
+		{
+			"id": "dark_foe",
+			"name": "Shadow Creature",
+			"hp": 60,
+			"attack": 12,
+			"defense": 8,
+			"exp_given": 15,
+			"gold_given": 20,
+			"can_spare": true,
+			"spare_requirements": ["dark_foe_light"],
+			"description": "A creature from the Dark World.",
+			"attack_patterns": [
+				{
+					"name": "Shadow Strike",
+					"damage": 8,
+					"bullets": 5,
+					"pattern": "wave"
+				},
+				{
+					"name": "Dark Pulse",
+					"damage": 10,
+					"bullets": 8,
+					"pattern": "spread"
+				}
+			],
+			"act_responses": {
+				"check": "* Shadow Creature - 60 HP\n* It flickers between light and dark.",
+				"light": "* You used light to weaken the shadow.\n* It recoils from the brightness!",
+				"talk": "* You tried to reason with it.\n* It seems... confused by kindness."
+			}
+		}
+	]
+}

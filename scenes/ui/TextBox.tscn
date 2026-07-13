@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckrj3mq7w8j6y"]
+
+[ext_resource type="Script" path="res://scenes/ui/TextBox.gd" id="1_textbox"]
+
+[node name="TextBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+script = ExtResource("1_textbox")
+
+[node name="NameBox" type="Panel" parent="."]
+offset_left = 60.0
+offset_top = 400.0
+offset_right = 260.0
+offset_bottom = 450.0
+
+[node name="NameLabel" type="Label" parent="NameBox"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+text = "Character"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextContainer" type="Panel" parent="."]
+offset_left = 60.0
+offset_top = 460.0
+offset_right = 1220.0
+offset_bottom = 620.0
+
+[node name="MarginContainer" type="MarginContainer" parent="TextContainer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 15
+
+[node name="TextLabel" type="RichTextLabel" parent="TextContainer/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "..."
+metadata/_edit_use_anchors_ = true
+
+[node name="Indicator" type="Sprite2D" parent="TextContainer"]
+position = Vector2(1170, 140)
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="."]
+offset_left = 100.0
+offset_top = 480.0
+offset_right = 500.0
+offset_bottom = 700.0

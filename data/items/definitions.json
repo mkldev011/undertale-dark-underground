@@ -1,0 +1,92 @@
+{
+	"items": [
+		{
+			"id": "bandage",
+			"name": "Bandage",
+			"description": "Heals 10 HP.",
+			"type": "consumable",
+			"effect": {
+				"heal": 10
+			},
+			"price": 5,
+			"stack_size": 20
+		},
+		{
+			"id": "cookie",
+			"name": "Cookie",
+			"description": "Heals 10 HP. It's a chocolate chip cookie.",
+			"type": "consumable",
+			"effect": {
+				"heal": 10
+			},
+			"price": 8,
+			"stack_size": 10
+		},
+		{
+			"id": "full_heal",
+			"name": "Full Heal",
+			"description": "Fully restores HP.",
+			"type": "consumable",
+			"effect": {
+				"full_heal": true
+			},
+			"price": 50,
+			"stack_size": 5
+		},
+		{
+			"id": "str_up",
+			"name": "STR Up",
+			"description": "Permanently increases ATK by 2.",
+			"type": "consumable",
+			"effect": {
+				"buff_attack": 2
+			},
+			"price": 100,
+			"stack_size": 3
+		},
+		{
+			"id": "def_up",
+			"name": "DEF Up",
+			"description": "Permanently increases DEF by 2.",
+			"type": "consumable",
+			"effect": {
+				"buff_defense": 2
+			},
+			"price": 100,
+			"stack_size": 3
+		},
+		{
+			"id": "dark_candy",
+			"name": "Dark Candy",
+			"description": "Heals 25 HP. Tastes like chocolate and darkness.",
+			"type": "consumable",
+			"effect": {
+				"heal": 25
+			},
+			"price": 15,
+			"stack_size": 10
+		},
+		{
+			"id": "revive",
+			"name": "Revive Mint",
+			"description": "Revives a fallen party member with 50% HP.",
+			"type": "consumable",
+			"effect": {
+				"revive": 0.5
+			},
+			"price": 150,
+			"stack_size": 3
+		},
+		{
+			"id": "tp_crystal",
+			"name": "TP Crystal",
+			"description": "Restores 30 TP.",
+			"type": "consumable",
+			"effect": {
+				"restore_tp": 30
+			},
+			"price": 25,
+			"stack_size": 10
+		}
+	]
+}

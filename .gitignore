@@ -1,0 +1,59 @@
+# Godot-specific
+.godot/
+*.import
+export/
+exports/
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE-specific
+.vscode/
+.idea/
+*.code-workspace
+
+# Build artifacts
+build/
+dist/
+*.exe
+*.dmg
+*.app
+*.apk
+*.aab
+
+# Exported files
+*.pck
+*.zip
+*.tar.gz
+
+# Save files (keep slot_0 for testing)
+/user/
+saves/
+
+# Audio (large files - may want to track separately)
+# Uncomment if tracking audio:
+# *.ogg
+# *.wav
+# *.mp3
+
+# Art assets (large files - may want to track separately)
+# Uncomment if tracking large art:
+# *.png
+# *.jpg
+# *.gif
+
+# Credits file
+CREDITS.md

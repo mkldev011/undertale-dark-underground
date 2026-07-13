@@ -1,0 +1,113 @@
+{
+	"spells": [
+		{
+			"id": "heal",
+			"name": "HEAL",
+			"description": "Restore 20 HP to the party.",
+			"type": "support",
+			"target": "party",
+			"tp_cost": 10,
+			"power": 20,
+			"element": "light",
+			"animation": "heal_glow"
+		},
+		{
+			"id": "fire",
+			"name": "FIRE",
+			"description": "Deal 15 fire damage to one enemy.",
+			"type": "attack",
+			"target": "single",
+			"tp_cost": 8,
+			"power": 15,
+			"element": "fire",
+			"animation": "fire_burst"
+		},
+		{
+			"id": "ice",
+			"name": "ICE",
+			"description": "Deal 12 ice damage. May freeze enemy.",
+			"type": "attack",
+			"target": "single",
+			"tp_cost": 8,
+			"power": 12,
+			"element": "ice",
+			"effect": "freeze",
+			"animation": "ice_shard"
+		},
+		{
+			"id": "lightning",
+			"name": "LIGHTNING",
+			"description": "Deal 20 lightning damage to one enemy.",
+			"type": "attack",
+			"target": "single",
+			"tp_cost": 12,
+			"power": 20,
+			"element": "lightning",
+			"animation": "thunder_strike"
+		},
+		{
+			"id": "peace",
+			"name": "PEACE",
+			"description": "Increase enemy mercy chance by 25%.",
+			"type": "support",
+			"target": "enemy",
+			"tp_cost": 5,
+			"effect": "mercy_up",
+			"animation": "heart_glow"
+		},
+		{
+			"id": "dark_star",
+			"name": "DARK STAR",
+			"description": "Deal 25 dark damage to all enemies.",
+			"type": "attack",
+			"target": "all",
+			"tp_cost": 20,
+			"power": 25,
+			"element": "dark",
+			"animation": "dark_explosion"
+		},
+		{
+			"id": "beam",
+			"name": "BEAM",
+			"description": "Deal 18 damage to one enemy.",
+			"type": "attack",
+			"target": "single",
+			"tp_cost": 10,
+			"power": 18,
+			"element": "neutral",
+			"animation": "laser_beam"
+		},
+		{
+			"id": "rude_buster",
+			"name": "RUDE BUSTER",
+			"description": "Deal 22 damage. Extra damage to enemies with low HP.",
+			"type": "attack",
+			"target": "single",
+			"tp_cost": 12,
+			"power": 22,
+			"element": "neutral",
+			"bonus_damage_low_hp": true,
+			"animation": "rude_buster"
+		},
+		{
+			"id": "shock",
+			"name": "SHOCK",
+			"description": "Paralyzes enemy, reducing their attack power.",
+			"type": "debuff",
+			"target": "single",
+			"tp_cost": 15,
+			"effect": "paralyze",
+			"animation": "electric_field"
+		},
+		{
+			"id": "protect",
+			"name": "PROTECT",
+			"description": "Reduce incoming damage for one turn.",
+			"type": "defense",
+			"target": "self",
+			"tp_cost": 8,
+			"effect": "defense_up",
+			"animation": "shield_glow"
+		}
+	]
+}

@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq5yv8n2xm4l3"]
+
+[ext_resource type="Script" path="res://scenes/battle/BattleUI.gd" id="1_battleui"]
+
+[node name="BattleUI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+script = ExtResource("1_battleui")
+
+[node name="BattleBox" type="Panel" parent="."]
+offset_left = 60.0
+offset_top = 60.0
+offset_right = 640.0
+offset_bottom = 480.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Soul" type="Area2D" parent="BattleBox"]
+position = Vector2(290, 210)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BattleBox/Soul"]
+shape = SubResource("CircleShape2D")
+
+[node name="HPContainer" type="HBoxContainer" parent="."]
+offset_left = 60.0
+offset_top = 500.0
+offset_right = 350.0
+offset_bottom = 550.0
+
+[node name="NameLabel" type="Label" parent="HPContainer"]
+layout_mode = 2
+text = "Frisk"
+
+[node name="HPBar" type="ProgressBar" parent="HPContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 20.0
+value = 20.0
+
+[node name="HPLabel" type="Label" parent="HPContainer"]
+layout_mode = 2
+text = "HP: 20/20"
+
+[node name="TPContainer" type="HBoxContainer" parent="."]
+offset_left = 60.0
+offset_top = 560.0
+offset_right = 350.0
+offset_bottom = 600.0
+
+[node name="TPBar" type="ProgressBar" parent="TPContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 100.0
+value = 50.0
+
+[node name="TPLabel" type="Label" parent="TPContainer"]
+layout_mode = 2
+text = "TP: 50/100"
+
+[node name="MenuContainer" type="VBoxContainer" parent="."]
+offset_left = 700.0
+offset_top = 200.0
+offset_right = 1000.0
+offset_bottom = 500.0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubResource" type="CircleShape2D" id="CircleShape2D"]
+radius = 10.0

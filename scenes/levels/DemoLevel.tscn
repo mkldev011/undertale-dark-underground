@@ -1,0 +1,73 @@
+[gd_scene load_steps=3 format=3 uid="uid://demo_level"]
+
+[ext_resource type="Script" path="res://scenes/levels/DemoLevel.gd" id="1_demo"]
+[ext_resource type="PackedScene" uid="uid://textbox" path="res://scenes/ui/TextBox.tscn" id="2_textbox"]
+[ext_resource type="PackedScene" uid="uid://battleui" path="res://scenes/battle/BattleUI.tscn" id="3_battleui"]
+
+[node name="DemoLevel" type="Node2D"]
+script = ExtResource("1_demo")
+
+[node name="Background" type="ColorRect" parent="."]
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 1400.0
+offset_bottom = 800.0
+color = Color(0.2, 0.2, 0.3, 1)
+
+[node name="Floor" type="ColorRect" parent="."]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 1180.0
+offset_bottom = 620.0
+color = Color(0.3, 0.3, 0.35, 1)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(640, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+shape = SubResource("RectangleShape2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player"]
+scale = Vector2(4, 4)
+
+[node name="InteractionArea" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/InteractionArea"]
+shape = SubResource("CircleShape2D")
+
+[node name="BattleTrigger" type="Area2D" parent="."]
+position = Vector2(1000, 360)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BattleTrigger"]
+shape = SubResource("CircleShape2D_2")
+
+[node name="BattleTriggerLabel" type="Label" parent="BattleTrigger"]
+offset_left = -60.0
+offset_top = -40.0
+offset_right = 60.0
+offset_bottom = -10.0
+text = "Walk here to
+start battle"
+horizontal_alignment = 1
+
+[node name="BattleTriggerMarker" type="ColorRect" parent="BattleTrigger"]
+offset_left = -30.0
+offset_top = 10.0
+offset_right = 30.0
+offset_bottom = 40.0
+color = Color(1, 0.2, 0.2, 1)
+
+[node name="TextBox" parent="." instance=ExtResource("2_textbox")]
+visible = false
+
+[node name="BattleUI" parent="." instance=ExtResource("3_battleui")]
+visible = false
+
+[node name="SubResource" type="RectangleShape2D" id="RectangleShape2D"]
+size = Vector2(16, 16)
+
+[node name="CircleShape2D" type="CircleShape2D" id="CircleShape2D"]
+radius = 30.0
+
+[node name="CircleShape2D_2" type="CircleShape2D" id="CircleShape2D_2"]
+radius = 40.0
