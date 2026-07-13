@@ -1,0 +1,174 @@
+[gd_scene load_steps=4 format=3 uid="uid://full_game"]
+
+[ext_resource type="Script" path="res://scenes/levels/FullGameChapter1.gd" id="1_game"]
+[ext_resource type="PackedScene" uid="uid://textbox" path="res://scenes/ui/TextBox.tscn" id="2_textbox"]
+
+[node name="FullGameChapter1" type="Node2D"]
+script = ExtResource("1_game")
+
+[node name="RuinAreas" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="RuinAreas"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.25, 0.2, 0.15, 1)
+
+[node name="Floor" type="ColorRect" parent="RuinAreas"]
+offset_left = 0.0
+offset_top = 600.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.35, 0.25, 0.2, 1)
+
+[node name="Leaves1" type="ColorRect" parent="RuinAreas"]
+offset_left = 100.0
+offset_top = 620.0
+offset_right = 150.0
+offset_bottom = 650.0
+color = Color(0.5, 0.35, 0.2, 1)
+
+[node name="Leaves2" type="ColorRect" parent="RuinAreas"]
+offset_left = 500.0
+offset_top = 640.0
+offset_right = 580.0
+offset_bottom = 680.0
+color = Color(0.45, 0.3, 0.15, 1)
+
+[node name="Leaves3" type="ColorRect" parent="RuinAreas"]
+offset_left = 900.0
+offset_top = 610.0
+offset_right = 980.0
+offset_bottom = 660.0
+color = Color(0.5, 0.35, 0.2, 1)
+
+[node name="Door" type="Area2D" parent="RuinAreas"]
+position = Vector2(640, 550)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RuinAreas/Door"]
+
+[node name="DoorSprite" type="ColorRect" parent="RuinAreas/Door"]
+offset_left = -60.0
+offset_top = -100.0
+offset_right = 60.0
+offset_bottom = 0.0
+color = Color(0.3, 0.2, 0.15, 1)
+
+[node name="DoorLabel" type="Label" parent="RuinAreas/Door"]
+offset_left = -30.0
+offset_top = -120.0
+offset_right = 30.0
+offset_bottom = -105.0
+text = "CASA DE TORIEL"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.8, 0.6, 0.4, 1)
+
+[node name="TorielHouse" type="Node2D" parent="."]
+
+[node name="Floor" type="ColorRect" parent="TorielHouse"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+color = Color(0.4, 0.3, 0.25, 1)
+
+[node name="Walls" type="ColorRect" parent="TorielHouse"]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 1230.0
+offset_bottom = 100.0
+color = Color(0.3, 0.2, 0.15, 1)
+
+[node name="Sofa" type="ColorRect" parent="TorielHouse"]
+offset_left = 200.0
+offset_top = 450.0
+offset_right = 500.0
+offset_bottom = 550.0
+color = Color(0.6, 0.4, 0.3, 1)
+
+[node name="SofaBack" type="ColorRect" parent="TorielHouse"]
+offset_left = 200.0
+offset_top = 400.0
+offset_right = 500.0
+offset_bottom = 450.0
+color = Color(0.5, 0.35, 0.25, 1)
+
+[node name="Fireplace" type="ColorRect" parent="TorielHouse"]
+offset_left = 900.0
+offset_top = 200.0
+offset_right = 1100.0
+offset_bottom = 400.0
+color = Color(0.2, 0.15, 0.1, 1)
+
+[node name="FireGlow" type="ColorRect" parent="TorielHouse"]
+offset_left = 930.0
+offset_top = 230.0
+offset_right = 1070.0
+offset_bottom = 350.0
+color = Color(1, 0.5, 0.2, 0.5)
+
+[node name="DarkFountain" type="Node2D" parent="."]
+visible = false
+position = Vector2(640, 300)
+
+[node name="FountainBase" type="ColorRect" parent="DarkFountain"]
+offset_left = -80.0
+offset_top = -20.0
+offset_right = 80.0
+offset_bottom = 20.0
+color = Color(0.1, 0.05, 0.15, 1)
+
+[node name="FountainGlow" type="ColorRect" parent="DarkFountain"]
+offset_left = -60.0
+offset_top = -150.0
+offset_right = 60.0
+offset_bottom = 0.0
+color = Color(0.4, 0.1, 0.6, 0.8)
+
+[node name="FountainDarkness" type="ColorRect" parent="DarkFountain"]
+offset_left = -100.0
+offset_top = -200.0
+offset_right = 100.0
+offset_bottom = 20.0
+color = Color(0.05, 0.02, 0.1, 0.6)
+
+[node name="Toriel" type="Node2D" parent="."]
+position = Vector2(300, 400)
+
+[node name="Sprite" type="ColorRect" parent="Toriel"]
+offset_left = -16.0
+offset_top = -48.0
+offset_right = 16.0
+offset_bottom = 0.0
+color = Color(1, 1, 1, 1)
+
+[node name="Label" type="Label" parent="Toriel"]
+offset_left = -30.0
+offset_top = -70.0
+offset_right = 30.0
+offset_bottom = -55.0
+text = "TORIEL"
+horizontal_alignment = 1
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(640, 500)
+process_mode = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+
+[node name="PlayerSprite" type="ColorRect" parent="Player"]
+offset_left = -12.0
+offset_top = -24.0
+offset_right = 12.0
+offset_bottom = 0.0
+color = Color(0.3, 0.5, 0.8, 1)
+
+[node name="TextBox" parent="." instance=ExtResource("2_textbox")]
+offset_left = 60.0
+offset_top = 500.0
+offset_right = 1180.0
+offset_bottom = 650.0
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+color = Color(0, 0, 0, 1)
