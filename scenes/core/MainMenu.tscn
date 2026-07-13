@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmq3wv2g5y4x8"]
+[gd_scene load_steps=2 format=3 uid="uid://mainmenu_scene"]
 
-[ext_resource type="Script" path="res://scenes/core/MainMenu.gd" id="1_mainmenu"]
+[ext_resource type="Script" path="res://scenes/core/MainMenu.gd" id="1_menu"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -8,7 +8,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_anchors_preset = 9
-script = ExtResource("1_mainmenu")
+script = ExtResource("1_menu")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -17,90 +17,127 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 color = Color(0.02, 0.02, 0.05, 1)
 
-[node name="ParticleLayer" type="Node2D" parent="."]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="TitleContainer" type="VBoxContainer" parent="."]
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 80.0
-offset_bottom = 280.0
+offset_top = 60.0
+offset_bottom = 260.0
 alignment = 1
 
-[node name="TitleLabel" type="Label" parent="VBoxContainer"]
+[node name="SoulSprite" type="Sprite2D" parent="TitleContainer"]
+position = Vector2(0, -80)
+scale = Vector2(4, 4)
+
+[node name="TitleLabel" type="Label" parent="TitleContainer"]
 layout_mode = 2
 text = "UNDERTALE"
 theme_override_colors/font_color = Color(0.9, 0.3, 0.3, 1)
-theme_override_font_sizes/font_size = 72
+theme_override_font_sizes/font_size = 80
 horizontal_alignment = 1
 
-[node name="SubtitleLabel" type="Label" parent="VBoxContainer"]
+[node name="SubtitleLabel" type="Label" parent="TitleContainer"]
 layout_mode = 2
 text = "DARK UNDERGROUND"
-theme_override_colors/font_color = Color(0.4, 0.2, 0.6, 1)
-theme_override_font_sizes/font_size = 36
+theme_override_colors/font_color = Color(0.5, 0.3, 0.8, 1)
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 
-[node name="MainMenuContainer" type="VBoxContainer" parent="."]
+[node name="MenuContainer" type="VBoxContainer" parent="."]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.8
-offset_left = -150.0
-offset_top = -50.0
-offset_right = 150.0
-offset_bottom = 50.0
-grow_horizontal = 2
-grow_vertical = 2
-alignment = 1
-
-[node name="ChapterSelectContainer" type="VBoxContainer" parent="."]
-visible = false
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 0.3
-anchor_right = 0.5
 anchor_bottom = 0.9
-offset_left = -250.0
-offset_top = 0.0
-offset_right = 250.0
+offset_left = -175.0
+offset_top = -80.0
+offset_right = 175.0
+offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="ChapterTitle" type="Label" parent="ChapterSelectContainer"]
-layout_mode = 2
-text = "- SELECT CHAPTER -"
+[node name="SettingsTitle" type="Label" parent="."]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 100.0
+text = "- AJUSTES -"
 theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 
-[node name="Spacer" type="Control" parent="ChapterSelectContainer"]
-custom_minimum_size = Vector2(0, 20)
-layout_mode = 2
-
-[node name="OptionsContainer" type="VBoxContainer" parent="."]
+[node name="SettingsContainer" type="VBoxContainer" parent="."]
 visible = false
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 0.4
 anchor_right = 0.5
-anchor_bottom = 0.8
+anchor_bottom = 0.9
 offset_left = -200.0
+offset_top = -50.0
 offset_right = 200.0
+offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
+[node name="CreditsTitle" type="Label" parent="."]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 20.0
+offset_bottom = 80.0
+text = "- CRÉDITOS -"
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
 [node name="CreditsContainer" type="VBoxContainer" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = -50.0
+offset_bottom = -50.0
+
+[node name="CreditsScroll" type="ScrollContainer" parent="CreditsContainer"]
+visible = false
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="CreditsLabel" type="Label" parent="CreditsContainer/CreditsScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChapterTitle" type="Label" parent="."]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 100.0
+text = "- SELECCIONAR CAPÍTULO -"
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+
+[node name="ChapterContainer" type="VBoxContainer" parent="."]
 visible = false
 anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.2
+anchor_top = 0.3
 anchor_right = 0.5
-anchor_bottom = 0.9
-offset_left = -300.0
-offset_right = 300.0
+anchor_bottom = 0.95
+offset_left = -225.0
+offset_top = 0.0
+offset_right = 225.0
 grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
@@ -110,11 +147,21 @@ anchors_preset = 12
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 20.0
-offset_top = -40.0
+offset_top = -50.0
 offset_right = -20.0
 grow_anchors_preset = 9
-text = "v0.2.0 - Alpha Build"
+text = "v0.4.0 - Alpha Build"
 theme_override_colors/font_color = Color(0.4, 0.4, 0.4, 1)
 theme_override_font_sizes/font_size = 14
 horizontal_alignment = 2
 vertical_alignment = 2
+
+[node name="FadeRect" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
