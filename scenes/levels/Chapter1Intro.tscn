@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://chapter1_intro"]
+
+[ext_resource type="Script" path="res://scenes/levels/Chapter1Intro.gd" id="1_ch1intro"]
+[ext_resource type="PackedScene" uid="uid://textbox" path="res://scenes/ui/TextBox.tscn" id="2_textbox"]
+
+[node name="Chapter1Intro" type="Node2D"]
+script = ExtResource("1_ch1intro")
+
+[node name="Background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+color = Color(0.1, 0.05, 0.15, 1)
+
+[node name="FadeOverlay" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+metadata/_edit_use_anchors_ = true
+
+[node name="TextBox" parent="." instance=ExtResource("2_textbox")]
+offset_left = 60.0
+offset_top = 460.0
+offset_right = 1220.0
+offset_bottom = 620.0
+metadata/_edit_use_anchors_ = true

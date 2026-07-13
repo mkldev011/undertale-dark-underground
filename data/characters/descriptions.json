@@ -1,0 +1,264 @@
+{
+	"characters": [
+		{
+			"name": "Frisk",
+			"type": "protagonist",
+			"description": "The human child who falls into the Underground. Unlike the original Undertale, Frisk is guided by a prophecy to seal the Dark Fountains.",
+			"personality": "Kind, determined, and surprisingly brave for their age. Shows compassion even to monsters.",
+			"abilities": ["Determination", "Heart Lock", "Fountain Seal"],
+			"location": "The Underground",
+			"quotes": [
+				"* Frisk looks at the darkness with determination.",
+				"* Despite everything, Frisk feels hope.",
+				"* Frisk refuses to give up."
+			],
+			"stats": {
+				"hp": 20,
+				"max_hp": 20,
+				"attack": 10,
+				"defense": 10,
+				"level": 1
+			}
+		},
+		{
+			"name": "Toriel",
+			"type": "guardian",
+			"description": "The caretaker of the Ruins. Former wife of Asgore. She protects fallen humans but harbors a deep sadness.",
+			"personality": "Motherly, protective, kind but fierce when threatened. Struggles with letting go.",
+			"abilities": ["Fire Magic", "Leadership", "Healing"],
+			"location": "The Ruins",
+			"quotes": [
+				"* Toriel comforts you with a warm smile.",
+				"* I will protect you, my child. No matter what.",
+				"* Even in darkness, there is always hope."
+			],
+			"stats": {
+				"hp": 680,
+				"max_hp": 680,
+				"attack": 18,
+				"defense": 25,
+				"level": 15
+			}
+		},
+		{
+			"name": "Sans",
+			"type": "mysterious",
+			"description": "A skeleton who serves as the guardian of Snowdin. He appears lazy but is surprisingly perceptive about the strange events.",
+			"personality": "Laid-back, pun-loving, but serious when it matters. He sees more than he lets on.",
+			"abilities": ["Karmic Retribution", "Shortcut", "Gaster Blasters"],
+			"location": "Snowdin",
+			"quotes": [
+				"* sans looks at you. 'things are getting pretty dark, huh?'",
+				"* 'you've got a lot of determination. i can tell.'",
+				"* 'don't worry. i'll be watching.' *he winks*"
+			],
+			"stats": {
+				"hp": 1,
+				"max_hp": 1,
+				"attack": 1,
+				"defense": 1,
+				"level": 1
+			}
+		},
+		{
+			"name": "Papyrus",
+			"type": "royal_guard",
+			"description": "Sans's brother, captain of the Royal Guard. He dreams of capturing humans for the King.",
+			"personality": "Enthusiastic, honorable, slightly naive. His optimism is contagious.",
+			"abilities": ["Blue Attacks", "Puzzle Mastery", "Cooking"],
+			"location": "Snowdin",
+			"quotes": [
+				"* NYEH! I, THE GREAT PAPYRUS, SHALL DEFEAT THIS DARKNESS!",
+				"* HUMAN! I WILL CAPTURE YOU... AND BECOME FAMOUS!",
+				"* I MADE SPAGHETTI! ...THE DARKNESS LIKED IT TOO!"
+			],
+			"stats": {
+				"hp": 680,
+				"max_hp": 680,
+				"attack": 20,
+				"defense": 20,
+				"level": 12
+			}
+		},
+		{
+			"name": "Undyne",
+			"type": "warrior",
+			"description": "The leader of the Royal Guard. Fierce, determined, and absolutely refuses to give up.",
+			"personality": "Bold, passionate, hot-headed but loyal. She fights for her friends with everything she has.",
+			"abilities": ["Spear Storm", "Armor", "Hero Mode"],
+			"location": "Waterfall/Hotland",
+			"quotes": [
+				"* YEAH! LET'S GET SOME!",
+				"* I'LL PROTECT EVERYONE! NO MATTER WHAT!",
+				"* HEY! DON'T GIVE UP! THAT'S NOT COOL!"
+			],
+			"stats": {
+				"hp": 720,
+				"max_hp": 720,
+				"attack": 23,
+				"defense": 22,
+				"level": 15
+			}
+		},
+		{
+			"name": "Alphys",
+			"type": "scientist",
+			"description": "The Royal Scientist. Anxious, nerdy, secretly very powerful. Created Mettaton.",
+			"personality": "Nervous, enthusiastic about science, self-conscious. Her inventions are incredible despite her doubts.",
+			"abilities": ["Amalgamates", "Mettaton Control", "Lab Analysis"],
+			"location": "Hotland Labs",
+			"quotes": [
+				"* O-oh no! The readings are off the charts!",
+				"* M-maybe my calculations were wrong...? No, wait! They're right!",
+				"* I-it's not like I did this for you or anything!"
+			],
+			"stats": {
+				"hp": 380,
+				"max_hp": 380,
+				"attack": 12,
+				"defense": 15,
+				"level": 10
+			}
+		},
+		{
+			"name": "Asgore",
+			"type": "king",
+			"description": "King of the Underground. A gentle giant who bears the weight of his people's survival.",
+			"personality": "Kind, melancholic, determined. He wants peace but is trapped by circumstance.",
+			"abilities": ["Trident Fire", "Royal Authority", "Inspire"],
+			"location": "New Home",
+			"quotes": [
+				"* Every time I see a human... I am reminded of what I must do.",
+				"* But perhaps... there is another way.",
+				"* I believe in you, my friend."
+			],
+			"stats": {
+				"hp": 800,
+				"max_hp": 800,
+				"attack": 25,
+				"defense": 25,
+				"level": 20
+			}
+		},
+		{
+			"name": "Flowey",
+			"type": "antagonist",
+			"description": "A flower who knows far too much. His motives are unclear, his smile too wide.",
+			"personality": "Cheerful on the surface, cruel underneath. He's seen timelines before.",
+			"abilities": ["Save/Load", "Bullet Pattern", "Transformation"],
+			"location": "Everywhere",
+			"quotes": [
+				"* Howdy! I'm FLOWEY! FLOWEY THE FLOWER!",
+				"* In this world... it's KILL or BE killed.",
+				"* You... you've changed, haven't you? I can see it in your eyes."
+			],
+			"stats": {
+				"hp": 999,
+				"max_hp": 999,
+				"attack": 99,
+				"defense": 99,
+				"level": 20
+			}
+		},
+		{
+			"name": "Kris",
+			"type": "dark_world_hero",
+			"description": "A human from the Dark World, or rather... their Light World reflection. Sent to investigate the fountain disturbances.",
+			"personality": "Quiet, determined, carries secrets. Something is different about them since they arrived.",
+			"abilities": ["Dark Magic", "Twin Blade", "Shadow Step"],
+			"location": "Traveling",
+			"quotes": [
+				"* ...I'm from somewhere else. Somewhere darker.",
+				"* The fountains... they're spreading. We have to stop them.",
+				"* (Kris looks at you with an unreadable expression)"
+			],
+			"stats": {
+				"hp": 22,
+				"max_hp": 22,
+				"attack": 11,
+				"defense": 10,
+				"level": 1
+			}
+		},
+		{
+			"name": "Ralsei",
+			"type": "dark_prince",
+			"description": "Prince of the Dark World. A fluffy, kind-hearted boy who wants to bring peace between worlds.",
+			"personality": "Gentle, supportive, surprisingly brave. He hides his horns and wants to be accepted.",
+			"abilities": ["Dark Heal", "Protect Aura", "Dark Magic"],
+			"location": "Dark World",
+			"quotes": [
+				"* I'm Ralsei! The prince of this world!",
+				"* With your light and my darkness... we can do anything!",
+				"* I always believed in you. Even when you didn't believe in yourself."
+			],
+			"stats": {
+				"hp": 18,
+				"max_hp": 18,
+				"attack": 8,
+				"defense": 12,
+				"level": 1
+			}
+		},
+		{
+			"name": "Susie",
+			"type": "warrior",
+			"description": "A tough monster from the Dark World. Rough around the edges, but loyal to friends.",
+			"personality": "Rough, tough, secretly kind. She'd never admit she cares about her friends.",
+			"abilities": ["Axe Attack", "Rude Buster", "Charge"],
+			"location": "Dark World",
+			"quotes": [
+				"* Tch. Whatever. Let's just get this over with.",
+				"* HEY! Don't go dying on us, dummy!",
+				"* ...Fine. Maybe I'm glad you're here. DON'T MAKE IT WEIRD!"
+			],
+			"stats": {
+				"hp": 25,
+				"max_hp": 25,
+				"attack": 14,
+				"defense": 8,
+				"level": 1
+			}
+		},
+		{
+			"name": "Noelle",
+			"type": "ice_mage",
+			"description": "A deer monster with hidden magical potential. Noelle is kind, studious, and harbors feelings she won't admit.",
+			"personality": "Sweet, shy, studies hard. Her magic awakens during the crisis.",
+			"abilities": ["Ice Magic", "Holiday Magic", "Heal"],
+			"location": "Snowdin",
+			"quotes": [
+				"* M-maybe I should have studied more...!",
+				"* Holiday magic... I didn't know I could do that!",
+				"* Kris... I-I'm glad you're here. We can do this together!"
+			],
+			"stats": {
+				"hp": 16,
+				"max_hp": 16,
+				"attack": 6,
+				"defense": 14,
+				"level": 1
+			}
+		},
+		{
+			"name": "The Shadow",
+			"type": "villain",
+			"description": "The true antagonist. A being of pure darkness, awakened by the imbalance. Wears a familiar face.",
+			"personality": "Elegant, manipulative, speaks in riddles. Believes darkness is the natural state of existence.",
+			"abilities": ["Shadow Control", "Dimension Rift", "Corruption"],
+			"location": "Unknown",
+			"quotes": [
+				"* You've been living in light. But light casts shadows... and I AM that shadow.",
+				"* Every fountain brings us closer to balance. Closer to darkness.",
+				"* You cannot defeat darkness by embracing light. You must BECOME the dark."
+			],
+			"stats": {
+				"hp": 9999,
+				"max_hp": 9999,
+				"attack": 50,
+				"defense": 50,
+				"level": 99
+			}
+		}
+	]
+}
