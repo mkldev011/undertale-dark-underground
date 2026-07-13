@@ -349,8 +349,8 @@ func _start_new_game() -> void:
 	GlobalVariables.reset_all_progress()
 	GlobalVariables.current_chapter = 1
 	
-	# Transition to intro
-	GameManager.transition_to_scene("res://scenes/levels/Chapter1Intro.tscn")
+	# Start directly at the playable level
+	GameManager.transition_to_scene("res://scenes/levels/CompleteLevel.tscn")
 
 func _continue_game() -> void:
 	var save_data = SaveSystem.load_game(0)

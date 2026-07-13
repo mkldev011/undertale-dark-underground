@@ -1,0 +1,259 @@
+[gd_scene load_steps=8 format=3 uid="uid://complete_level"]
+
+[ext_resource type="Script" path="res://scenes/levels/CompleteLevel.gd" id="1_complete"]
+[ext_resource type="PackedScene" uid="uid://textbox" path="res://scenes/ui/TextBox.tscn" id="2_textbox"]
+[ext_resource type="PackedScene" uid="uid://battleui" path="res://scenes/battle/BattleUI.tscn" id="3_battleui"]
+
+[node name="CompleteLevel" type="Node2D"]
+script = ExtResource("1_complete")
+
+[node name="Areas" type="Node2D" parent="."]
+
+[node name="RuinsEntrance" type="Node2D" parent="Areas"]
+visible = true
+
+[node name="Floor" type="ColorRect" parent="Areas/RuinsEntrance"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 1190.0
+offset_bottom = 620.0
+color = Color(0.3, 0.2, 0.15, 1)
+
+[node name="WallTop" type="ColorRect" parent="Areas/RuinsEntrance"]
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 1200.0
+offset_bottom = 100.0
+color = Color(0.15, 0.1, 0.1, 1)
+
+[node name="WallBottom" type="ColorRect" parent="Areas/RuinsEntrance"]
+offset_left = 40.0
+offset_top = 620.0
+offset_right = 1200.0
+offset_bottom = 640.0
+color = Color(0.15, 0.1, 0.1, 1)
+
+[node name="TorielHome" type="Node2D" parent="Areas"]
+visible = false
+
+[node name="Floor" type="ColorRect" parent="Areas/TorielHome"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 600.0
+offset_bottom = 620.0
+color = Color(0.35, 0.25, 0.2, 1)
+
+[node name="PuzzleRoom" type="Node2D" parent="Areas"]
+visible = false
+
+[node name="Floor" type="ColorRect" parent="Areas/PuzzleRoom"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 640.0
+offset_bottom = 620.0
+color = Color(0.25, 0.18, 0.12, 1)
+
+[node name="DarkFountainRoom" type="Node2D" parent="Areas"]
+visible = false
+
+[node name="Floor" type="ColorRect" parent="Areas/DarkFountainRoom"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 640.0
+offset_bottom = 620.0
+color = Color(0.1, 0.05, 0.15, 1)
+
+[node name="BossArena" type="Node2D" parent="Areas"]
+visible = false
+
+[node name="Floor" type="ColorRect" parent="Areas/BossArena"]
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 640.0
+offset_bottom = 620.0
+color = Color(0.05, 0.02, 0.1, 1)
+
+[node name="Toriel" type="Node2D" parent="."]
+position = Vector2(200, 400)
+groups = ["interactable"]
+
+[node name="Sprite" type="Sprite2D" parent="Toriel"]
+position = Vector2(0, -20)
+scale = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="Toriel"]
+offset_left = -30.0
+offset_top = -60.0
+offset_right = 30.0
+offset_bottom = -45.0
+text = "TORIEL"
+horizontal_alignment = 1
+
+[node name="Flowey" type="Node2D" parent="."]
+position = Vector2(500, 450)
+groups = ["interactable"]
+
+[node name="Sprite" type="Sprite2D" parent="Flowey"]
+position = Vector2(0, -10)
+scale = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="Flowey"]
+offset_left = -25.0
+offset_top = -50.0
+offset_right = 25.0
+offset_bottom = -35.0
+text = "FLOWEY"
+horizontal_alignment = 1
+
+[node name="DarkFountain" type="Node2D" parent="."]
+position = Vector2(900, 350)
+groups = ["interactable"]
+
+[node name="Glow" type="ColorRect" parent="DarkFountain"]
+offset_left = -50.0
+offset_top = -60.0
+offset_right = 50.0
+offset_bottom = 10.0
+color = Color(0.3, 0.1, 0.5, 0.5)
+
+[node name="Sprite" type="Sprite2D" parent="DarkFountain"]
+position = Vector2(0, -10)
+scale = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="DarkFountain"]
+offset_left = -60.0
+offset_top = -80.0
+offset_right = 60.0
+offset_bottom = -65.0
+text = "DARK FOUNTAIN"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.6, 0.3, 0.9, 1)
+
+[node name="SavePoint" type="Area2D" parent="."]
+position = Vector2(640, 350)
+groups = ["interactable"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SavePoint"]
+
+[node name="Sprite" type="Sprite2D" parent="SavePoint"]
+position = Vector2(0, -30)
+scale = Vector2(4, 4)
+
+[node name="Label" type="Label" parent="SavePoint"]
+offset_left = -20.0
+offset_top = -80.0
+offset_right = 20.0
+offset_bottom = -65.0
+text = "SAVE"
+horizontal_alignment = 1
+theme_override_colors/font_color = Color(1, 0.9, 0.5, 1)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(640, 500)
+groups = ["player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+
+[node name="PlayerSprite" type="Sprite2D" parent="Player"]
+position = Vector2(0, -20)
+scale = Vector2(4, 4)
+
+[node name="InteractionArea" type="Area2D" parent="Player"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/InteractionArea"]
+shape = SubResource("CircleShape2D")
+
+[node name="TextBox" parent="." instance=ExtResource("2_textbox")]
+visible = false
+
+[node name="BattleUI" parent="." instance=ExtResource("3_battleui")]
+visible = false
+
+[node name="HUD" type="Control" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HPBar" type="ProgressBar" parent="HUD"]
+offset_left = 60.0
+offset_top = 20.0
+offset_right = 300.0
+offset_bottom = 50.0
+max_value = 20.0
+value = 20.0
+
+[node name="HPLabel" type="Label" parent="HUD"]
+offset_left = 60.0
+offset_top = 55.0
+offset_right = 200.0
+offset_bottom = 80.0
+text = "HP: 20/20"
+
+[node name="GoldLabel" type="Label" parent="HUD"]
+offset_left = 60.0
+offset_top = 85.0
+offset_right = 200.0
+offset_bottom = 110.0
+text = "GOLD: 0"
+
+[node name="PauseMenu" type="Control" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_anchors_preset = 9
+
+[node name="Panel" type="Panel" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 150.0
+offset_bottom = 100.0
+grow_anchors_preset = 4
+
+[node name="Label" type="Label" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -80.0
+offset_right = 50.0
+offset_bottom = -50.0
+grow_anchors_preset = 4
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -30.0
+offset_right = 80.0
+offset_bottom = 0.0
+grow_anchors_preset = 4
+text = "RESUME"
+
+[node name="QuitButton" type="Button" parent="PauseMenu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 40.0
+grow_anchors_preset = 4
+text = "QUIT TO MENU"
+
+[node name="CircleShape2D" type="CircleShape2D" parent="."]
+radius = 30.0

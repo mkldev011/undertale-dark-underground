@@ -13,8 +13,6 @@ config_version=5
 config/name="Undertale: Dark Underground"
 config/description="A free, non-commercial fangame inspired by Undertale and Deltarune"
 run/main_scene="res://scenes/core/MainMenu.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://assets/sprites/ui/icon.png"
 
 [autoload]
 
@@ -24,6 +22,8 @@ AudioManager="*res://scripts/core/AudioManager.gd"
 DialogueManager="*res://scripts/core/DialogueManager.gd"
 BattleManager="*res://scripts/core/BattleManager.gd"
 GlobalVariables="*res://scripts/core/GlobalVariables.gd"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://assets/sprites/ui/icon.png"
 
 [display]
 
