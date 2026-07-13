@@ -67,6 +67,10 @@ func save_exists(slot: int = 0, file_name: String = "savegame.sav") -> bool:
 # Delete a save file
 func delete_save(slot: int = 0, file_name: String = "savegame.sav") -> bool:
 	var file_path = SAVE_DIR + "slot_%d_%s" % [slot, file_name]
+	# Compatibility: if a string is passed as first param, treat it as a full path
+	if typeof(slot) == TYPE_STRING:
+		file_path = slot
+		slot = 0
 	if FileAccess.file_exists(file_path):
 		DirAccess.remove_absolute(file_path)
 		print("Save deleted from slot %d" % slot)

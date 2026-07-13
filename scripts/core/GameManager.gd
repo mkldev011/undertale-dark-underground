@@ -141,5 +141,5 @@ func quit_game() -> void:
 
 # Restart game (new game)
 func restart_game() -> void:
-	SaveSystem.delete_save("user://savegame.sav")
+	SaveSystem.delete_save(0)
 	get_tree().reload_current_scene()
