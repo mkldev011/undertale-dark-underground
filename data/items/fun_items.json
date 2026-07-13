@@ -1,0 +1,189 @@
+{
+	"items": [
+		{
+			"id": "bandage",
+			"name": "VENDAS",
+			"description": "Un vendaje básico. Cura un poco de HP.",
+			"type": "consumable",
+			"effect": {"heal": 10},
+			"price": 5,
+			"icon": "🩹"
+		},
+		{
+			"id": "cookie",
+			"name": "GALLETA",
+			"description": "Una galleta deliciosa. ¡Pero no la mangos!",
+			"type": "consumable",
+			"effect": {"heal": 15},
+			"price": 8,
+			"icon": "🍪"
+		},
+		{
+			"id": "spaghetti",
+			"name": "ESPAGUETIS DE PAPYRUS",
+			"description": "¡Los mejores espaguetis! ...creo.",
+			"type": "consumable",
+			"effect": {"heal": 20},
+			"price": 15,
+			"icon": "🍝",
+			"fun_fact": "Sabe a esperanza y determinación."
+		},
+		{
+			"id": "burnt_spadetti",
+			"name": "ESPAGUETIS QUEMADOS",
+			"description": "Papi... ¿esto es seguro para comer?",
+			"type": "consumable",
+			"effect": {"heal": -5},
+			"price": 0,
+			"icon": "💀",
+			"fun_fact": "Daña en vez de curar. ¡Ups!"
+		},
+		{
+			"id": "hot_cat",
+			"name": "HOT CAT",
+			"description": "Un clásico de Grillby. ¡Caliente!",
+			"type": "consumable",
+			"effect": {"heal": 25},
+			"price": 20,
+			"icon": "🌭"
+		},
+		{
+			"id": "legendary_hero",
+			"name": "HÉROE LEGENDARIO",
+			"description": "¡La leyenda dice que tiene sabor a victoria!",
+			"type": "consumable",
+			"effect": {"heal": 50, "tp_restore": 30},
+			"price": 100,
+			"icon": "⭐",
+			"fun_fact": "Solo para los más valientes."
+		},
+		{
+			"id": "water", 
+			"name": "AGUA",
+			"description": "Simple y necesaria para la vida.",
+			"type": "consumable",
+			"effect": {"heal": 5},
+			"price": 3,
+			"icon": "💧"
+		},
+		{
+			"id": "monster_candy",
+			"name": "DULCE DE MONSTRUO",
+			"description": "Dulce y con sabor a esperanza.",
+			"type": "consumable",
+			"effect": {"heal": 8},
+			"price": 6,
+			"icon": "🍬"
+		},
+		{
+			"id": "nice_cream",
+			"name": "NICE CREAM",
+			"description": "¡Helado muy nice! Dice NiceRabbit.",
+			"type": "consumable",
+			"effect": {"heal": 18},
+			"price": 12,
+			"icon": "🍦",
+			"fun_fact": "También mejora tu运气."
+		},
+		{
+			"id": "puppydough",
+			"name": "PUPPYDOUGH",
+			"description": "Dulce de Perrsi. ¡Es muy lindo!",
+			"type": "consumable",
+			"effect": {"heal": 12},
+			"price": 10,
+			"icon": "🐶"
+		},
+		{
+			"id": "biskey",
+			"name": "BISKEY",
+			"description": "Galleta con forma de llave. ¿Para qué sirve?",
+			"type": "consumable",
+			"effect": {"heal": 10},
+			"price": 7,
+			"icon": "🔑"
+		},
+		{
+			"id": "cworm",
+			"name": "CWORM",
+			"description": "Gusanito. ¿Por qué está aquí?",
+			"type": "consumable",
+			"effect": {"heal": 3},
+			"price": 1,
+			"icon": "🐛",
+			"fun_fact": "No preguntes por qué existe."
+		},
+		{
+			"id": "ghost_food",
+			"name": "COMIDA FANTASMA",
+			"description": "¿Puedes comer algo que no existe?",
+			"type": "consumable",
+			"effect": {"heal": 0},
+			"price": 0,
+			"icon": "👻",
+			"fun_fact": "No hace nada. Es un fantasma."
+		},
+		{
+			"id": "revenge",
+			"name": "REVENGEssette",
+			"description": "¡Es LA REVANCHA!",
+			"type": "consumable",
+			"effect": {"heal": 40},
+			"price": 50,
+			"icon": "⚔️"
+		},
+		{
+			"id": "instant_noodles",
+			"name": "FIDEOS INSTANTÁNEOS",
+			"description": "Listos en 3 minutos. Más rápido que Alphys.",
+			"type": "consumable",
+			"effect": {"heal": 22},
+			"price": 15,
+			"icon": "🍜"
+		},
+		{
+			"id": "sea_tea",
+			"name": "TÉ DEL MAR",
+			"description": "Del océano. Sabe a sal y aventuras.",
+			"type": "consumable",
+			"effect": {"heal": 16, "speed_up": true},
+			"price": 20,
+			"icon": "🌊"
+		},
+		{
+			"id": "abandoned_quiche",
+			"name": "QUICHE ABANDONADO",
+			"description": "Alguien lo dejó aquí. ¿Está bueno?",
+			"type": "consumable",
+			"effect": {"heal": -10},
+			"price": 0,
+			"icon": "🥧",
+			"fun_fact": "Mejor no preguntar quién lo abandonó."
+		},
+		{
+			"id": "popato_chips",
+			"name": "PATATAS POPATO",
+			"description": "Crujientes y rojas. Muy sabrosas.",
+			"type": "consumable",
+			"effect": {"heal": 14},
+			"price": 12,
+			"icon": "🥔"
+		},
+		{
+			"id": "face_stealer",
+			"name": "ROBA-CARAS",
+			"description": "Roba las caras de otros. Muy raro.",
+			"type": "key_item",
+			"description": "Un objeto misterioso...",
+			"icon": "🎭"
+		},
+		{
+			"id": "camera",
+			"name": "CÁMARA",
+			"description": "Para tomar fotos. ¿Para qué?",
+			"type": "key_item",
+			"description": "Útil para el modo galería.",
+			"icon": "📷"
+		}
+	]
+}

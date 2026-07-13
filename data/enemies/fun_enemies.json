@@ -1,0 +1,296 @@
+{
+	"enemies": [
+		{
+			"id": "froggit",
+			"name": "FROGGIT",
+			"hp": 20,
+			"max_hp": 20,
+			"attack": 5,
+			"defense": 2,
+			"attack_name": "Ribbit",
+			"xp": 3,
+			"gold": 5,
+			"attack_patterns": ["spread_3", "aimed"],
+			"can_spare": true,
+			"spare_method": "compliment",
+			"description": "Una rana-monstruo. Es más fuerte de lo que parece.",
+			"dialogue": {
+				"first": "* Froggit te mira fijamente.",
+				"compliment": "* Froggit se sonroja. Está demasiado avergonzado para luchar.",
+				"threaten": "* Froggit se asusta pero no huye."
+			},
+			"fun_fact": "Los Froggits son los enemigos más comunes del Underground."
+		},
+		{
+			"id": "whimsun",
+			"name": "WHIMSUN",
+			"hp": 15,
+			"max_hp": 15,
+			"attack": 4,
+			"defense": 1,
+			"attack_name": "Blush",
+			"xp": 2,
+			"gold": 3,
+			"attack_patterns": ["aimed_2"],
+			"can_spare": true,
+			"spare_method": "encourage",
+			"description": "Una polilla tímida. No quiere fightear.",
+			"dialogue": {
+				"first": "* Whimsun tiembla nerviosamente.",
+				"encourage": "* Whimsun se siente mejor. ¡Gracias por ser nice!",
+				"threaten": "* Whimsun se asusta tanto que casi llora."
+			},
+			"fun_fact": "Los Whimsuns son vegetarianos. Solo quieren paz."
+		},
+		{
+			"id": "loox",
+			"name": "LOOX",
+			"hp": 25,
+			"max_hp": 25,
+			"attack": 6,
+			"defense": 3,
+			"attack_name": "Eye Laser",
+			"xp": 4,
+			"gold": 8,
+			"attack_patterns": ["aimed", "spread_3"],
+			"can_spare": true,
+			"spare_method": "flirt",
+			"description": "UnLoox con ojos多多. Le gusta make eye contact.",
+			"dialogue": {
+				"first": "* Loox te mira con sus múltiples ojos.",
+				"flirt": "* Loox parpadea varias veces. Estás en su corazón ahora.",
+				"threaten": "* Loox cierra algunos ojos. No le impresionas."
+			},
+			"fun_fact": "Loox puede ver en 360 grados. No puedes esconderte."
+		},
+		{
+			"id": "moldsmal",
+			"name": "MOLDSMAL",
+			"hp": 22,
+			"max_hp": 22,
+			"attack": 7,
+			"defense": 4,
+			"attack_name": "Poison Spore",
+			"xp": 5,
+			"gold": 7,
+			"attack_patterns": ["spread_4"],
+			"can_spare": true,
+			"spare_method": "clean",
+			"description": "Un hongo viscoso. Es viscous.",
+			"dialogue": {
+				"first": "* Moldsmal segrega mucus por todas partes.",
+				"clean": "* Moldsmal se limpia. Se siente refreshed!",
+				"threaten": "* Moldsmal segrega más mucus como venganza."
+			},
+			"fun_fact": "Los Moldsmals pueden crecer hasta 3 metros."
+		},
+		{
+			"id": "shadow",
+			"name": "CRÍA SOMBRA",
+			"hp": 40,
+			"max_hp": 40,
+			"attack": 10,
+			"defense": 5,
+			"attack_name": "Dark Strike",
+			"xp": 10,
+			"gold": 15,
+			"attack_patterns": ["wave", "spread_5"],
+			"can_spare": true,
+			"spare_method": "light",
+			"description": "Una criatura nacida de la oscuridad.",
+			"dialogue": {
+				"first": "* Las sombras se agrupan frente a ti.",
+				"light": "* La luz hace que la sombra se weaken.",
+				"threaten": "* La sombra se vuelve más dark y强大."
+			},
+			"fun_fact": "Las sombras del Underground son más peligrosas de noche."
+		},
+		{
+			"id": "darker",
+			"name": "DARKNER",
+			"hp": 50,
+			"max_hp": 50,
+			"attack": 12,
+			"defense": 6,
+			"attack_name": "Shadow Claw",
+			"xp": 15,
+			"gold": 20,
+			"attack_patterns": ["spread_6", "aimed_3"],
+			"can_spare": true,
+			"spare_method": "truth",
+			"description": "Un Darkner transformado por la oscuridad.",
+			"dialogue": {
+				"first": "* Un ser oscuro bloquea tu camino.",
+				"truth": "* La verdad sobre la oscuridad... ¿la aceptas?",
+				"threaten": "* La oscuridad se intensifica."
+			},
+			"fun_fact": "Los Darkners pueden existir en ambos mundos."
+		},
+		{
+			"id": "guard",
+			"name": "GUARDIÁN OSCURO",
+			"hp": 100,
+			"max_hp": 100,
+			"attack": 15,
+			"defense": 10,
+			"attack_name": "Shadow Storm",
+			"xp": 30,
+			"gold": 50,
+			"attack_patterns": ["spread_8", "wave", "aimed_5"],
+			"can_spare": false,
+			"description": "Guardian de un Dark Fountain. Debe ser derrotado.",
+			"dialogue": {
+				"first": "* Un GUARDIÁN OSCURO aparece!",
+				"fight": "* ¡Este enemigo debe ser destruido!"
+			},
+			"fun_fact": "Los Guardianes nacieron cuando los fountains aparecieron."
+		},
+		{
+			"id": "shadow_king",
+			"name": "REY SOMBRA",
+			"hp": 500,
+			"max_hp": 500,
+			"attack": 25,
+			"defense": 20,
+			"attack_name": "Darkness Reign",
+			"xp": 100,
+			"gold": 200,
+			"attack_patterns": ["spread_12", "wave_2", "aimed_8", "spiral"],
+			"can_spare": true,
+			"spare_method": "embrace",
+			"is_boss": true,
+			"description": "El verdadero antagonista. Gobernante de la oscuridad.",
+			"dialogue": {
+				"first": "* El REY SOMBRA se manifiesta!",
+				"embrace": "* Aceptas la oscuridad. Ella te acepta a ti.",
+				"fight": "* La batalla final comienza!"
+			},
+			"fun_fact": "El Rey Sombra existe desde antes del primer fountain."
+		},
+		{
+			"id": "skelebro",
+			"name": "SKELLY",
+			"hp": 35,
+			"max_hp": 35,
+			"attack": 8,
+			"defense": 4,
+			"attack_name": "Bone Toss",
+			"xp": 12,
+			"gold": 18,
+			"attack_patterns": ["spread_4", "aimed_2"],
+			"can_spare": true,
+			"spare_method": "praise",
+			"description": "Un esqueleto que lucha por honor.",
+			"dialogue": {
+				"first": "* Un guerrero esquelético te desafía!",
+				"praise": "* Skelly se siente honored. ¡Admite tu victory!",
+				"threaten": "* Skelly usa su ataque más powerful."
+			},
+			"fun_fact": "No es Sans ni Papyrus. Es un skelebro diferente."
+		},
+		{
+			"id": "ice_cap",
+			"name": "CAPA DE HIELO",
+			"hp": 30,
+			"max_hp": 30,
+			"attack": 9,
+			"defense": 5,
+			"attack_name": "Ice Shard",
+			"xp": 8,
+			"gold": 12,
+			"attack_patterns": ["aimed_4", "spread_3"],
+			"can_spare": true,
+			"spare_method": "warm",
+			"description": "Un monstruo de hielo puro.",
+			"dialogue": {
+				"first": "* Un ser de hielo frío aparece!",
+				"warm": "* El hielo se derrite un poco. Se siente better.",
+				"threaten": "* El frío se intensifica. ¡Brrr!"
+			},
+			"fun_fact": "Los Ice Caps viven en las zonas más frías."
+		},
+		{
+			"id": "dummy",
+			"name": "MANIQUÍ",
+			"hp": 99,
+			"max_hp": 99,
+			"attack": 0,
+			"defense": 99,
+			"attack_name": "None",
+			"xp": 0,
+			"gold": 0,
+			"attack_patterns": [],
+			"can_spare": true,
+			"spare_method": "practice",
+			"description": "Un maniquí de entrenamiento. ¡No esquiva!",
+			"dialogue": {
+				"first": "* Es solo un maniquí. No puede fightear.",
+				"practice": "* Has practicado suficiente. El maniquí está proud."
+			},
+			"fun_fact": "Los maniquíes son免费. No cobran gold."
+		},
+		{
+			"id": "glyde",
+			"name": "GLYDE",
+			"hp": 45,
+			"max_hp": 45,
+			"attack": 11,
+			"defense": 7,
+			"attack_name": "Dive Bomb",
+			"xp": 14,
+			"gold": 25,
+			"attack_patterns": ["aimed_3", "spread_5"],
+			"can_spare": true,
+			"spare_method": "admire",
+			"description": "Un monstruo volador que seadmira demasiado.",
+			"dialogue": {
+				"first": "* Glyde vuela en círculos, admirando su reflection.",
+				"admire": "* Glyde está de acuerdo: es el más beautiful.",
+				"threaten": "* Glyde se ofende. ¡Cómo te atreves a criticize!"
+			},
+			"fun_fact": "Glyde cobra $50 por batallas. ¡Es caro!"
+		},
+		{
+			"id": "astigmatism",
+			"name": "ASTIGMATISMO",
+			"hp": 28,
+			"max_hp": 28,
+			"attack": 6,
+			"defense": 3,
+			"attack_name": "Wrong Focus",
+			"xp": 6,
+			"gold": 9,
+			"attack_patterns": ["aimed_2", "random"],
+			"can_spare": true,
+			"spare_method": "help",
+			"description": "Un fantasma con problemas de visión.",
+			"dialogue": {
+				"first": "* Astigmatismo te mira con ojos borrosos.",
+				"help": "* Le das tus glasses de repuesto. Ahora ve mejor!",
+				"threaten": "* Astigmatismo se enfada y ataca random directions."
+			},
+			"fun_fact": "Los astigmatismos ven todo borroso. Poor things."
+		},
+		{
+			"id": "temmie",
+			"name": "TEMMIE",
+			"hp": 10,
+			"max_hp": 10,
+			"attack": 2,
+			"defense": 1,
+			"attack_name": "Stare",
+			"xp": 1,
+			"gold": 1,
+			"attack_patterns": ["aimed_1"],
+			"can_spare": true,
+			"spare_method": "temmie_flirt",
+			"description": "¡TEMMIE! ¡Son adorables!",
+			"dialogue": {
+				"first": "* ¡TEMMIE!",
+				"temmie_flirt": "* temmie thinks u r rly prety!!!",
+				"threaten": "* temmie use HIDEOUS BONE ATTACK!!!"
+			},
+			"fun_fact": "¡TEMMIE! ¡TEME! ¡TEMMIE! (temtem)"
+		}
+	]
+}
