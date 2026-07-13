@@ -1,0 +1,505 @@
+{
+	"characters": [
+		{
+			"id": "frisk",
+			"name": "FRISK",
+			"type": "protagonist",
+			"hp": 20,
+			"max_hp": 20,
+			"attack": 10,
+			"defense": 10,
+			"level": 1,
+			"description": "El niño humano que cae al Underground. Lleva el peso de la profecía.",
+			"personality": "Determinado, amable, pero con secretos que ni él conoce.",
+			"abilities": ["Determinación", "Alma Roja", "Sentir la oscuridad"],
+			"location": "Ruinas del Underground",
+			"quotes": [
+				"* Frisk mira hacia adelante con determinación.",
+				"* A pesar del peligro, Frisk no retrocede.",
+				"* Algo dentro de Frisk brilla con fuerza."
+			]
+		},
+		{
+			"id": "toriel",
+			"name": "TORIEL",
+			"type": "guardian",
+			"hp": 680,
+			"max_hp": 680,
+			"attack": 18,
+			"defense": 25,
+			"level": 15,
+			"description": "La cuidadora de las Ruinas. Antigua reina, ahora protectora.",
+			"personality": "Maternal, protectora, pero con una fuerza oculta.",
+			"abilities": ["Fuego Mágico", "Escudo de Luz", "Curación"],
+			"location": "Las Ruinas",
+			"quotes": [
+				"¿Estás bien, mi hijo?",
+				"La oscuridad nunca prevalecerá sobre el amor.",
+				"Debo protegerte... aunque me cueste todo."
+			]
+		},
+		{
+			"id": "sans",
+			"name": "SANS",
+			"type": "guardian",
+			"hp": 1,
+			"max_hp": 1,
+			"attack": 1,
+			"defense": 1,
+			"level": 1,
+			"description": "El esqueleto perezoso que observa desde las sombras. Sabe más de lo que dice.",
+			"personality": "Cómodo, misterioso, pero letal cuando es necesario.",
+			"abilities": ["Retribución Kármica", "Atajos", "Juicio"],
+			"location": "Snowdin",
+			"quotes": [
+				"las cosas se están poniendo oscuras, ¿no?",
+				"he estado observando.",
+				"cuando quieras hablar... ya sabes dónde encontrarme."
+			],
+			"secret": true
+		},
+		{
+			"id": "papyrus",
+			"name": "PAPYRUS",
+			"type": "royal_guard",
+			"hp": 680,
+			"max_hp": 680,
+			"attack": 20,
+			"defense": 20,
+			"level": 12,
+			"description": "El gran esqueleto que quiere capturarte para el Rey. Conductor de puzzles.",
+			"personality": "Entusiasta, noble, increíblemente positivo.",
+			"abilities": ["Ataque Azul", "Puzzles", "Cocina (mejorando)"],
+			"location": "Snowdin",
+			"quotes": [
+				"¡YO, EL GRAN PAPYRUS, TE CAPTURARÉ!",
+				"¿QUIERES ESPAGUETIS?",
+				"SANS, DEJA DE HACER CÓDIGO Y VEN AQUÍ"
+			]
+		},
+		{
+			"id": "undyne",
+			"name": "UNDYNE",
+			"type": "warrior",
+			"hp": 720,
+			"max_hp": 720,
+			"attack": 23,
+			"defense": 22,
+			"level": 15,
+			"description": "Líder de la Guardia Real. Feroz guerrera con un corazón de oro.",
+			"personality": "Intensa, valiente, incapaz de rendirse.",
+			"abilities": ["Lluvia de Lanzas", "Armadura de Luz", "Hero Mode"],
+			"location": "Hotland/Castillo",
+			"quotes": [
+				"¡¡¡SÍÍÍ!!! ¡¡ES HORA DE PELEAR!!",
+				"¡NO TE RINDAS! ¡ESO NO ES GUAY!",
+				"prometo proteger a todos... sin importar qué."
+			]
+		},
+		{
+			"id": "alphys",
+			"name": "ALPHYS",
+			"type": "scientist",
+			"hp": 380,
+			"max_hp": 380,
+			"attack": 12,
+			"defense": 15,
+			"level": 10,
+			"description": "Científica Real. Creadora de Mettaton. Más poderosa de lo que cree.",
+			"personality": "Nerviosa, nerd, insecure pero brillante.",
+			"abilities": ["Amalgamados", "Control de Mettaton", "Análisis"],
+			"location": "Laboratorio de Hotland",
+			"quotes": [
+				"¡L-lo siento mucho! ¡No era mi intención!",
+				"m-mis cálculos... ¿fueron correctos?",
+				"¡E-espera! ¡Tengo una idea!"
+			]
+		},
+		{
+			"id": "asgore",
+			"name": "ASGORE",
+			"type": "king",
+			"hp": 800,
+			"max_hp": 800,
+			"attack": 25,
+			"defense": 25,
+			"level": 20,
+			"description": "Rey del Underground. Un gigante gentil atrapado por la corona.",
+			"personality": "Melancólico, amable, carregando el peso de su pueblo.",
+			"abilities": ["Tridente de Fuego", "Inspiración", "Determinación Real"],
+			"location": "Nuevo Hogar",
+			"quotes": [
+				"Cada vez que veo a un humano... me acuerdo de mi hijo.",
+				"Pero quizás... hay otra manera.",
+				"Creo en ti, amigo mío."
+			]
+		},
+		{
+			"id": "flowey",
+			"name": "FLOWEY",
+			"type": "antagonist",
+			"hp": 999,
+			"max_hp": 999,
+			"attack": 99,
+			"defense": 99,
+			"level": 99,
+			"description": "Una flor que conoce demasiado. Su sonrisa esconde secretos oscuros.",
+			"personality": "Manipulador, cruel, pero con una razón oculta.",
+			"abilities": ["Guardar/Cargar", "Patrones de Balas", "Transformación"],
+			"location": "En todas partes",
+			"quotes": [
+				"¡Hola! ¡SOY FLOWEY! ¡FLOWEY LA FLOR!",
+				"en este mundo... es MATAR O MORIR.",
+				"tú... has cambiado, ¿verdad? puedo verlo en tus ojos."
+			],
+			"secret": true
+		},
+		{
+			"id": "mettabot",
+			"name": "METTATON",
+			"type": "celebrity",
+			"hp": 500,
+			"max_hp": 500,
+			"attack": 20,
+			"defense": 18,
+			"level": 14,
+			"description": "La estrella de TV del Underground. Perfectamente diseñado para la batalla.",
+			"personality": "Dramático, narcisista, pero leal a sus amigos.",
+			"abilities": ["Brazos de Arma", "Transmisión", "Combustión"],
+			"location": "Hotland",
+			"quotes": [
+				"¡OHHHHH! ¡MI audiencia está EN VIVO para esto!",
+				"¡Soy MATTERATON! ¡La estrella más BRILLANTE!",
+				"¿Quién es mi favorito? ¡TÚ!"
+			]
+		},
+		{
+			"id": "napstablook",
+			"name": "NAPSTABLOOK",
+			"type": "ghost",
+			"hp": 200,
+			"max_hp": 200,
+			"attack": 10,
+			"defense": 10,
+			"level": 8,
+			"description": "Un fantasma melancólico. Más sensible de lo que parece.",
+			"personality": "Triste, tímido, artisticamente talentoso.",
+			"abilities": ["Volar", "Proyectar Sombras", "Música"],
+			"location": "Waterfall",
+			"quotes": [
+				"...lo siento... no quería... bother you...",
+				"¿quieres... escuchar mi nueva canción?",
+				"s-sí... estás siendo muy nice..."
+			]
+		},
+		{
+			"id": "asriel",
+			"name": "ASRIEL",
+			"type": "prince",
+			"hp": 9999,
+			"max_hp": 9999,
+			"attack": 99,
+			"defense": 99,
+			"level": 99,
+			"description": "El príncipe del Underground. Una leyenda que camina entre mundos.",
+			"personality": "Amable, confuso, atrapado entre la luz y la oscuridad.",
+			"abilities": ["Poder del Corazón", "Dimensión Cruzada", "Fuego de las Estrellas"],
+			"location": "???",
+			"quotes": [
+				"...",
+				"a pesar de todo... te quiero, hermano.",
+				"espera... ¿quién eres tú realmente?"
+			],
+			"secret": true
+		},
+		{
+			"id": "kris",
+			"name": "KRIS",
+			"type": "dark_world_hero",
+			"hp": 22,
+			"max_hp": 22,
+			"attack": 11,
+			"defense": 10,
+			"level": 1,
+			"description": "Un humano del Mundo Oscuro. O su reflejo en el mundo de luz.",
+			"personality": "Reservado, determinado, guardando secretos.",
+			"abilities": ["Magia Oscura", "Espada Gemela", "Paso de Sombra"],
+			"location": "Entre mundos",
+			"quotes": [
+				"...vengo de algún lugar más oscuro.",
+				"los fountains... se están expandiendo.",
+				"(...)"
+			]
+		},
+		{
+			"id": "ralsei",
+			"name": "RALSEI",
+			"type": "dark_prince",
+			"hp": 18,
+			"max_hp": 18,
+			"attack": 8,
+			"defense": 12,
+			"level": 1,
+			"description": "Príncipe del Mundo Oscuro. Un fluffy que oculta sus verdaderos poderes.",
+			"personality": "Gentil, supportive, determinado a bring paz.",
+			"abilities": ["Curación Oscura", "Aura Protectora", "Magia Sombría"],
+			"location": "Mundo Oscuro",
+			"quotes": [
+				"¡Soy Ralsei! ¡El príncipe de este mundo!",
+				"juntos... podemos hacer cualquier cosa.",
+				"siempre creí en ti. incluso cuando no creías en ti mismo."
+			]
+		},
+		{
+			"id": "susie",
+			"name": "SUSIE",
+			"type": "warrior",
+			"hp": 25,
+			"max_hp": 25,
+			"attack": 14,
+			"defense": 8,
+			"level": 1,
+			"description": "Una monstrua tough del Mundo Oscuro. Más amable de lo que parece.",
+			"personality": "Gruesa, honesta, fiercely leal.",
+			"abilities": ["Hacha", "Rude Buster", "Carga"],
+			"location": "Mundo Oscuro",
+			"quotes": [
+				"tch. lo que sea. vamos.",
+				"¡HEY! ¡No te mueras, idiota!",
+				"...fine. maybe estoy glad you're here. ¡NO LO HAGAS RARO!"
+			]
+		},
+		{
+			"id": "noelle",
+			"name": "NOELLE",
+			"type": "ice_mage",
+			"hp": 16,
+			"max_hp": 16,
+			"attack": 6,
+			"defense": 14,
+			"level": 1,
+			"description": "Una cierva con poderes latentes. Hija del alcalde de Snowdin.",
+			"personality": "Sweet, estudiosa, con poderes que apenas descubre.",
+			"abilities": ["Magia de Hielo", "Magia de Vacaciones", "Curación"],
+			"location": "Snowdin",
+			"quotes": [
+				"s-soy Noelle... hola...",
+				"¿p-puedo ir contigo? promise ser útil!",
+				"¡KRIS! ¡YO... yo can do it now!"
+			]
+		},
+		{
+			"id": "berdly",
+			"name": "BERDLY",
+			"type": "scholar",
+			"hp": 30,
+			"max_hp": 30,
+			"attack": 8,
+			"defense": 12,
+			"level": 3,
+			"description": "El amigo de Noelle. Un pájaro arrogante pero sorprendentemente valiente.",
+			"personality": "Orgulloso, studious, secretly insecure.",
+			"abilities": ["Lluvia de Hielo", "Análisis de Enemigos", "Gafas de Sabio"],
+			"location": "Snowdin",
+			"quotes": [
+				"YO soy Berdly! ¡El número 2! (después de Noelle)",
+				"¡Mi cerebro SUPERIOR process this!",
+				"...N-no es que me importe lo que pienses..."
+			]
+		},
+		{
+			"id": "lancer",
+			"name": "LANCER",
+			"type": "darkner",
+			"hp": 20,
+			"max_hp": 20,
+			"attack": 10,
+			"defense": 5,
+			"level": 2,
+			"description": "El tonto príncipe de Card Castle. Más inteligente de lo que parece.",
+			"personality": "Childlike, juguetón, unexpectedly wise.",
+			"abilities": ["Escudo de Cartas", "Paseo de Sombra", "Amigos"],
+			"location": "Card Castle",
+			"quotes": [
+				"¡SOY LANCER! ¡El tipo GUAY!",
+				"¿quieres ser mi ami-... ¿quiero decir... ENEMIGO?",
+				"p-pero... ¿por qué no podemos ser amigos?"
+			]
+		},
+		{
+			"id": "rouxls_kaard",
+			"name": "ROUXLS KAARD",
+			"type": "villain",
+			"hp": 150,
+			"max_hp": 150,
+			"attack": 12,
+			"defense": 10,
+			"level": 6,
+			"description": "El antagonista de Card Castle. Actually pretty dramatic y somewhat helpful.",
+			"personality": "Dramático, hambriento de poder, secretamente ally.",
+			"abilities": ["Enigmas", "Transmutación", "Drama"],
+			"location": "Card Castle",
+			"quotes": [
+				"¡YO SOY ROUXLS KAARD! ¡MAESTRO DE LOS PUZLES!",
+				"¡UN MOMENTO! ¿QUÉ SIGNIFICA ESTO?!",
+				"...fine. te ayudo. pero NO es porque me caigas bien."
+			]
+		},
+		{
+			"id": "queen",
+			"name": "QUEEN",
+			"type": "antagonist",
+			"hp": 400,
+			"max_hp": 400,
+			"attack": 18,
+			"defense": 15,
+			"level": 10,
+			"description": "La Reina de Card Castle. Un robot con problemas de mamá.",
+			"personality": "Controladora, insecure, desperate para ser amada.",
+			"abilities": ["Tecno magia", "Rayos", "Hambre de Control"],
+			"location": "Card Castle",
+			"quotes": [
+				"¡YO SOY LA REINA! ¡HACIENDO LO NECESARIO!",
+				"¿por qué nadie me entiende?",
+				"mamá... ¿por qué me abandonaste?"
+			]
+		},
+		{
+			"id": "spamton",
+			"name": "SPAMTON",
+			"type": "void",
+			"hp": 250,
+			"max_hp": 250,
+			"attack": 16,
+			"defense": 8,
+			"level": 8,
+			"description": "Un títere del vacío. Luchando por su libertad.",
+			"personality": "Maníaco, desesperado, tragic.",
+			"abilities": ["Spam", "Rayos de Vacío", "Cables"],
+			"location": "Ciber Mundo",
+			"quotes": [
+				"¡[!$@?%]! ¡SPAMTON G. SPAMTON!",
+				"¿quieres ser [libre]? ¿igual que yo?",
+				"¡¡¡MAMÁ!!! ¡¡¿POR QUÉ ME ABANDONASTE?!"
+			],
+			"secret": true
+		},
+		{
+			"id": "gaster",
+			"name": "GASTER",
+			"type": "mystery",
+			"hp": 9999,
+			"max_hp": 9999,
+			"attack": 99,
+			"defense": 99,
+			"level": 99,
+			"description": "El científico real que desapareció. ¿Existió alguna vez?",
+			"personality": "???",
+			"abilities": ["???", "???", "???"],
+			"location": "Fuera del mundo",
+			"quotes": [
+				"...",
+				"¿Puedes oírme?",
+				"En algún lugar... alguien puede oírme..."
+			],
+			"secret": true,
+			"discovered": false
+		},
+		{
+			"id": "brandon",
+			"name": "BRANDON",
+			"type": "npc",
+			"hp": 100,
+			"max_hp": 100,
+			"attack": 5,
+			"defense": 5,
+			"level": 5,
+			"description": "Un erizo que vende cosas. Es friendlier que average.",
+			"personality": "Friendly, viajante, always carrying mysterious items.",
+			"abilities": ["Comercio", "Información", "Amigos"],
+			"location": "Various",
+			"quotes": [
+				"¡Hey! ¡Soy Brandon! ¿quieres comprar algo?",
+				"Este objeto... tiene una historia interesting...",
+				"¡Nos vemos por ahí, amigo!"
+			]
+		},
+		{
+			"id": "gering",
+			"name": "GERING",
+			"type": "npc",
+			"hp": 50,
+			"max_hp": 50,
+			"attack": 1,
+			"defense": 1,
+			"level": 1,
+			"description": "Un erizo que solo dice 'gering'. Nadie sabe por qué.",
+			"personality": "Misterioso, repetitive, oddly endearing.",
+			"abilities": ["Gerin", "Gerint", "Gering"],
+			"location": "Snowdin",
+			"quotes": [
+				"gering.",
+				"gering?",
+				"...gering."
+			]
+		},
+		{
+			"id": "temmie",
+			"name": "TEMMIE",
+			"type": "npc",
+			"hp": 10,
+			"max_hp": 10,
+			"attack": 2,
+			"defense": 1,
+			"level": 1,
+			"description": "Una criatura cat-like. Extremadamente adorable.",
+			"personality": "Adorable, confusa, temible.",
+			"abilities": ["Stare", "HIDEOUS BONE ATTACK", "uwu"],
+			"location": "Ruins",
+			"quotes": [
+				"¡TEMMIE!",
+				"¡OI U IS CUTE!",
+				"¡WANT SPAGUETIS?!"
+			]
+		},
+		{
+			"id": "monster_kid",
+			"name": "NIÑO MONSTRUO",
+			"type": "npc",
+			"hp": 100,
+			"max_hp": 100,
+			"attack": 10,
+			"defense": 5,
+			"level": 5,
+			"description": "Un niño que admira a Undyne. Sin nombre conocido.",
+			"personality": "Admirativo, valiente, determinado a ser como Undyne.",
+			"abilities": ["Saltar", "Mirar hacia arriba", "Determinación"],
+			"location": "Waterfall",
+			"quotes": [
+				"¡Undyne es tan guay! ¡Algún día seré como ella!",
+				"¡HEY! ¡No te rindas!",
+				"¡Yo... yo creo en ti!"
+			]
+		},
+		{
+			"id": "chara",
+			"name": "CHARA",
+			"type": "mystery",
+			"hp": 9999,
+			"max_hp": 9999,
+			"attack": 99,
+			"defense": 99,
+			"level": 99,
+			"description": "El primer humano en caer. Una presencia en la mente de Frisk.",
+			"personality": "???",
+			"abilities": ["???", "???", "???"],
+			"location": "En todas partes y en ninguna",
+			"quotes": [
+				"...eres realmente irritante, ¿lo sabías?",
+				"¿Por qué... por qué sigues luchando?",
+				"...gracias por la determinación."
+			],
+			"secret": true
+		}
+	]
+}
